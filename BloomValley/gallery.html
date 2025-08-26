@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Bloom Valley</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="Client1_LogoPalette3_FF3723.png" alt="Bloom Valley Logo" class="logo" />
+    <h1>Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="margin: 20px 0;">Our Products</h2>
+    <button id="viewCartBtn">View Cart</button>
+
+    <section class="gallery">
+      <div class="item">
+        <img src="Client1_AppleTree.png" alt="Apple Tree" />
+        <h3>Apple Tree</h3>
+        <p>A great addition for ripe apples!</p>
+        <button class="add-to-cart" data-item="Apple tree">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_BirchTree.png" alt="Birch Tree" />
+        <h3>Birch Tree</h3>
+        <p>A comforting and beautiful tree perfect for any home.</p>
+        <button class="add-to-cart" data-item="Birch tree">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_MapleTree.png" alt="Maple Tree" />
+        <h3>Maple Tree</h3>
+        <p>Looking for a little color? This maple will keep your backyard vibrant!</p>
+        <button class="add-to-cart" data-item="Maple tree">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_AloePlant.png" alt="Aloe Vera Plant" />
+        <h3>Aloe Vera Plant</h3>
+        <p>A perfect house plant and very useful for sunburns!</p>
+        <button class="add-to-cart" data-item="Aloe vera plant">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_SpiderPlant.png" alt="Spider Plant" />
+        <h3>Spider Plant</h3>
+        <p>They say spider plants keep the spiders away!</p>
+        <button class="add-to-cart" data-item="Spider plant">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_StringofPearls.png" alt="String of Pearls" />
+        <h3>String of Pearls</h3>
+        <p>Jewelry is expensive! Choose a more budget friendly pearl for your person!</p>
+        <button class="add-to-cart" data-item="String of pearls">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_BirdHouse.png" alt="Birdhouse" />
+        <h3>Birdhouse</h3>
+        <p>Give those feathery fellows a home to be proud of.</p>
+        <button class="add-to-cart" data-item="Birdhouse">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_PottingSoil.png" alt="Potting Soil" />
+        <h3>Potting Soil</h3>
+        <p>A great mix for inside and outside plants!</p>
+        <button class="add-to-cart" data-item="Potting soil">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="Client1_WateringCan.png" alt="Watering Can" />
+        <h3>Watering Can</h3>
+        <p>We know you don't want to keep dragging the hose around everywhere!</p>
+        <button class="add-to-cart" data-item="Watering can">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Your Cart</h3>
+      <ul id="cartItems"></ul>
+      <button id="clearCart">Clear Cart</button>
+      <button id="processOrder">Checkout</button>
+    </div>
+  </div>
+
+  <footer>
+    <form id="subscribeForm">
+      <label for="email">Subscribe to our newsletter:</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  <div class="socials">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
